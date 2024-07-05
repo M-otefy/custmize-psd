@@ -1184,7 +1184,6 @@ nav li{
 @media screen and (max-width:576px){
     .container{
         width: 350px;
-        outline: solid red;
     }
     #half-cercle{
         display: none;
@@ -1256,6 +1255,7 @@ nav li{
     }
     #dash-board svg{
         width: 300px;
+        align-self:center;
     }
     #logo{
         width: 300px;
