@@ -1258,20 +1258,23 @@ nav li{
         font-size: 16px;
         line-height: 40px;
     }
+    #customer-content-2{
+        width: 190px;
+    }
     #feather{
-        width: 300px;
+        width: 190px;
     }
     #feather p{
         font-size: 14px;
     }
     #Star{
-        width: 300px;
+        width: 190px;
     }
     #Star p{
         font-size: 14px;
     }
     #sun{
-        width: 300px;
+        width: 190px;
     }
     #sun p{
         font-size: 14px;
