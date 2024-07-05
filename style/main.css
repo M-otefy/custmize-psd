@@ -614,6 +614,7 @@ nav li{
 }
 #section-10{
     margin-top: 84px;
+    padding-bottom: 40px;
 }
 #section-10 h2{
     font-size: 43.25px;
@@ -1004,7 +1005,6 @@ nav li{
     }
     #section-6 h2{
         font-size: 32px;
-        padding: 0 20px;
     }
     #double-arrwo svg{
         width: 120px;
@@ -1014,15 +1014,6 @@ nav li{
         flex-direction: column;
         align-items: center;
         gap: 25px;
-    }
-    #First-card{
-        width: 100%;
-    }
-    #second-card{
-        width: 100%;
-    }
-    #last-card{
-        width: 100%;
     }
     #drop-down{
         flex-direction: column;
@@ -1150,7 +1141,11 @@ nav li{
         padding: 16px 56px;
     }
     #dash-board svg{
-        width: 100%;
+        width: 500px;
+    }
+    #logo{
+        flex-direction: column;
+        align-items: center;
     }
     #section-3 h2{
         font-size: 28px;
@@ -1192,6 +1187,7 @@ nav li{
         width: 200px;
         top: 105px;
     }
+    
     #section-6 h2{
         text-align: center;
     }
@@ -1222,7 +1218,7 @@ nav li{
         margin-top: 25px;
     }
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:320px){
     .container{
         width: 320px;
     }
@@ -1237,11 +1233,12 @@ nav li{
         flex-direction: column;
         align-items: center;
     }
-    #dash-board{
+    #dash-board svg{
         width: 300px;
     }
     #logo{
         justify-content: center;
+        width: 300px;
     }
     #section-3 h2{
         font-size: 16px;
