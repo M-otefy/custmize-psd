@@ -1257,6 +1257,7 @@ nav li{
     #dash-board svg{
         width: 300px;
         align-items: center;
+        justify-contact:center;
     }
     #logo{
         width: 300px;
@@ -1363,7 +1364,7 @@ nav li{
     }
     #user-submit a{
         font-size: 18px;
-        padding: 12px 40px;
+        padding: 12px 25px;
     }
     #last-section{
         flex-direction: column;
