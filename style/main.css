@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: solid greenyellow; */
 }
 
 @font-face {
@@ -1075,7 +1076,7 @@ nav li{
 }
 @media screen and (max-width:576px){
     .container{
-        width: 550px;
+        width: 576px;
     }
     #half-cercle{
         display: none;
@@ -1131,8 +1132,12 @@ nav li{
         align-items: center;
     }
     #First-section{
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 25px;
+    }
+    #two-btn{
+        flex-direction: column;
+        align-items: center;
     }
     #First-btn{
         padding: 16px 56px;
@@ -1141,7 +1146,7 @@ nav li{
         padding: 16px 56px;
     }
     #dash-board svg{
-        width: 500px;
+        width: 300px;
     }
     #logo{
         flex-direction: column;
@@ -1160,7 +1165,7 @@ nav li{
     }
     #customer-content{
         margin-top: 50px;
-        width: 100%;
+        /* width: 100%; */
         padding-left: 15px;
     }
     #Customers-2{
@@ -1168,20 +1173,20 @@ nav li{
         align-items: center;
     }
     #customer-content-2{
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 25px;
     }
     #section-5 h2{
         margin-top: 0;
     }
     #feather{
-        width: 500px;
+        width: 300px;
     }
     #Star{
-        width: 500px;
+        width: 300px;
     }
     #sun{
-        width: 500px;
+        width: 300px;
     }
     #customer-2 svg{
         width: 200px;
