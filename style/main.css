@@ -1,0 +1,1313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "OpenSans-regular";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.w-300{
+    width: 300px;
+}
+.w-500{
+    width: 500px;
+}
+
+#nav-bar-check{
+    display: none;
+}
+.nav-bar-list{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-bar-list a{
+    color: #efefef;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-bar-btn span {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 2px 0;
+}
+
+
+
+#section-1{
+    background: rgba(10, 38, 64, 1);
+    padding-top: 56px;
+    position: relative;
+}
+#section-1 h1{
+    font-size: 43.25px;
+    font-weight: 700;
+    font-family: "OpenSans-Bold";
+    color: rgba(255, 255, 255, 1);
+    margin-left: 11px;
+}
+nav li{
+    z-index: 1;
+}
+#half-cercle svg{
+    position: absolute;
+    left: 725px;
+    top: -75px;
+
+}
+#last-link{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 8px 40px;
+    border: 2px;
+    border-radius: 24px;
+    color: rgba(10, 38, 64, 1);
+}
+.nav-bar-list a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#section-2{
+    background: rgba(10, 38, 64, 1);
+    padding-top: 64px;
+    padding-bottom: 56px;
+    margin-bottom: 84px;
+}
+#section-2 h1{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 72px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
+}
+#section-2 p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 24px;
+    color: rgba(241, 241, 241, 1);
+    margin-bottom: 40px;
+}
+#First-btn{
+    padding: 16px 56px;
+    border: 2px;
+    border-radius: 56px;
+    background: rgba(101, 228, 163, 1);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(10, 38, 64, 1);
+    text-decoration: none;
+}
+#second-btn{
+    padding: 16px 56px;
+    border: 2px solid;
+    border-radius: 56px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+#two-btn{
+    display: flex;
+    gap: 24px;
+}
+#two-btn a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#dash-board{
+    z-index: 111111;
+}
+#logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    padding-bottom: 64px;
+}
+/* #logo{
+    background: linear-gradient(90deg, #0A2640 0%, rgba(10, 38, 64, 0.109375) 31.6%, rgba(10, 38, 64, 0) 72.89%, #0A2640 97.87%);
+
+} */
+#section-3{
+    margin-bottom: 185px;
+}
+#section-3 h6{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(119, 119, 119, 1);
+    margin-bottom: 12px;
+}
+#section-3 h2{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    line-height: 72px;
+    margin-bottom: 78px;
+    padding: 0 120px;
+}
+#section-3 img{
+    width: 300px;
+}
+#section-3 h5{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+#section-3 p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(119, 119, 119, 1);
+    margin-bottom: 28px;
+}
+#section-3 a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "OpenSans-bold";
+    color: rgba(10, 38, 64, 1);
+    margin-right: 12px;
+    line-height: 32px;
+    padding-right: 3px;
+}
+#section-3 a:hover{
+    color: chocolate;
+    text-decoration: overline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#customer{
+    position: relative;
+    width: 494px;
+}
+#customer img{
+    width: 100%;
+}
+
+#customer svg{
+    position: absolute;
+    right: 57px;
+    bottom: 104px;
+    top: 222px;
+}
+#section-4 h2{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 56px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 40px;
+}
+#three-check{
+    gap: 24px;
+}
+#three-check svg{
+    margin-right: 27px;
+}
+#section-4 a{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-family: "OpenSans-bold";
+    text-decoration: none;
+    background-color: rgba(10, 38, 64, 1);
+    padding: 16px 56px;
+    border: 2px;
+    border-radius: 56px;
+    margin-top: 56px;
+    align-self: flex-start;
+}
+#section-4 a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#section-5{
+    margin-top: 150px;
+}
+#section-5 h2{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 56px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 64px;
+    margin-top: 120px;
+}
+#feather{
+    padding: 16px 53px 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "OpenSans-semiBold";
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(10, 38, 64, 1);
+    width: 500px;
+    margin-bottom: 24px;
+}
+#feather p{
+    margin-left: 12px;
+}
+/* #feather:hover{
+    transition-duration: 200ms;
+    transition-property: all;
+} */
+#Star p{
+    margin-left: 12px;
+}
+#Star{
+    padding: 16px 53px 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "OpenSans-semiBold";
+    color: rgba(0, 0, 0, 1);
+    width: 500px;
+    margin-bottom: 24px;
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
+}
+#Star:hover{
+    background-color: rgba(105, 230, 166, 1);
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#sun p{
+    margin-left: 12px;
+}
+#sun{
+    padding: 16px 53px 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "OpenSans-semiBold";
+    color: rgba(0, 0, 0, 1);
+    width: 500px;
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
+}
+#sun:hover{
+    background-color: rgba(105, 230, 166, 1);
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#customer-2{
+    width: 440px;
+    position: relative;
+    margin-bottom: 120px;
+}
+#customer-2 img{
+    width: 100%;
+}
+#customer-2 svg{
+    position: absolute;
+    left: 48px;
+    top: 304px;
+}
+#section-6{
+    background-color: rgba(10, 38, 64, 1);
+    margin: 120px 0 124px 0;
+    padding: 96px 0 96px 0;
+}
+#section-6 h2{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 72px;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 150px;
+}
+#three-cards{
+    margin-top: 72px;
+}
+#First-card{
+    width: 350px;
+    height: 322px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.12);
+    padding: 40px;
+    border-radius: 12px;
+}
+#First-card p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+#First-card img{
+    margin-right: 16px;
+}
+#First-card h6{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    margin-bottom: 6px;
+}
+#First-card span{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+}
+#second-card{
+    width: 350px;
+    height: 394px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.12);
+    padding: 40px;
+    border-radius: 12px;
+}
+#second-card p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+#second-card img{
+    margin-right: 16px;
+}
+#second-card h6{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    margin-bottom: 6px;
+}
+#second-card span{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+}
+#last-card{
+    width: 350px;
+    height: 358px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.12);
+    padding: 40px;
+    border-radius: 12px;
+}
+#last-card p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+#last-card img{
+    margin-right: 16px;
+}
+#last-card h6{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    margin-bottom: 6px;
+}
+#last-card span{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+}
+#hero-banner{
+    /* width: 1100px; */
+    margin-bottom: 56px;
+}
+#section-7 h2{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 56px;
+    color: rgba(0, 0, 0, 1);
+}
+#fr-check p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    margin-right: 84px;
+}   
+#fr-check{
+    margin-bottom: 32px;
+}
+#sc-check p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    margin-right: 66px;
+}
+#section-8{
+    margin-top: 158px;
+    margin-bottom: 124px;
+}
+#section-8 h6{
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    font-size: 20px;
+    color: rgba(119, 119, 119, 1);
+    margin-bottom: 12px;
+}
+#section-8 h2{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 72px;
+    text-align: center;
+    margin-bottom: 77px;
+    padding: 0 120px;
+}
+#section-8 h4{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    color: rgba(10, 38, 64, 1);  
+    margin-right: 12px;  
+}
+#section-8 span{
+    color: rgba(119, 119, 119, 1);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+}
+#section-8 p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 32px;
+    color: rgba(0, 0, 0, 1);
+    margin: 12px 0 20px 0;
+}
+#section-8 h5{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    color: rgba(0, 0, 0, 1);
+    margin-left: 12px;
+}
+#admin-card > img{
+    margin-bottom: 24px;
+}
+#admin-card-2 > img{
+    margin-bottom: 24px;
+}
+#admin-card-3 > img{
+    margin-bottom: 24px;
+}
+#load-more{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 84px;
+}
+#load-more a{
+    text-decoration: none;
+    border: 2px solid;
+    color: rgba(10, 38, 64, 1);
+    padding: 16px 56px;
+    border-radius: 56px;
+}
+#load-more a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#section-9{
+    position: relative;
+}
+#half-cercle-2 svg{
+    position: absolute;
+    top: 0;
+}
+#section-9 .container{
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: rgba(10, 38, 64, 1);
+}
+#section-9 h2{
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 72px;
+    text-align: center;
+    padding: 0 200px; 
+    margin-bottom: 48px;
+}
+#user-submit input{
+    padding: 12px 158px 12px 32px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px;
+    border-radius: 240px;
+    margin-right: 24px;
+}
+#user-submit a{
+    background-color: rgba(101, 228, 163, 1);
+    padding: 16px 56px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    color: rgba(10, 38, 64, 1);
+    text-decoration: none;
+    border: 2px;
+    border-radius: 56px;
+}
+#user-submit a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#section-10{
+    margin-top: 84px;
+}
+#section-10 h2{
+    font-size: 43.25px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    color: rgba(10, 38, 64, 1);
+    margin-left: 11px;
+}
+#section-10 p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+    line-height: 28px;
+    color: rgba(119, 119, 119, 1);
+    margin-top: 40px;
+    margin-bottom: 64px;    
+}
+#section-10 span{
+    color: rgba(119, 119, 119, 1);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+}
+#link-bord{
+    width: 640px;
+}
+#link-bord h4{
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    margin-bottom: 32px;
+}
+#link-bord a{
+    text-decoration: none;
+    color: rgba(119, 119, 119, 1);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "OpenSans-regular";
+}
+#link-bord a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    transition-duration: 200ms;
+    transition-property: all;
+}
+#link-bord ul{
+    gap: 20px;
+    list-style: none;
+}
+#last-btn span{
+    padding: 5px 14px;
+    background-color: rgba(101, 228, 163, 1);
+    color: rgba(10, 38, 64, 1);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "OpenSans-semiBold";
+    border-radius: 120px;
+    margin-left: 5px;
+}
+@media screen and (max-width:1200px){
+    .container{
+        width: 950px;
+    }
+    #half-cercle svg{
+        left: 575px;
+    }
+    #First-section{
+        width: 450px;
+    }
+    #section-2 h1{
+        font-size: 42px;
+    }
+    #dash-board svg{
+        width: 450px;
+    }
+    #customer{
+        width: 450px;
+    }
+    #customer img{
+        width: 100%;
+    }
+    #customer-content{
+        width: 450px;
+    }
+    #customer-2{
+        width: 450px;
+    }
+    #customer-2 img{
+        width: 100%;
+    }
+    #customer-content-2{
+        width: 450px;
+    }
+    #feather{
+        width: 450px;
+    }
+    #Star{
+        width: 450px;
+    }
+    #sun{
+        width: 450px;
+    }
+    #section-6 h2{
+        font-size: 40px;
+        padding: 0 80px;
+    }
+    #First-card{
+        width: 300px;
+    }
+    #second-card{
+        width: 300px;
+    }
+    #last-card{
+        width: 300px;
+    }
+    #hero-banner img{
+        width: 100%;
+    }
+    #section-7 h2{
+        font-size: 32px;
+    }
+
+}
+@media screen and (max-width:991px) {
+    .container{
+        width: 850px;
+    }
+    #half-cercle svg{
+        left: 366px;
+    }
+    #First-section{
+        width: 400px;
+        padding-left: 15px;
+    }
+    #section-2 h1{
+        font-size: 38px;
+    }
+    #dash-board svg{
+        width: 400px;
+    }
+    #dash-board{
+        padding-right: 15px;
+    }
+    #First-btn{
+        padding: 16px 30px;
+    }
+    #second-btn{
+        padding: 12px 30px;
+    }
+    #logo{
+        flex-wrap: wrap;
+        gap: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #cards{
+        padding: 0 10px;
+    }
+    #card-1{
+        width: 270px;
+    }
+    #card-1 img{
+        width: 270px;
+    }
+    #card-2{
+        width: 270px;
+    }
+    #card-2 img{
+        width: 270px;
+    }
+    #card-3{
+        width: 270px;
+    }
+    #card-3 img{
+        width: 270px;
+    }
+    #customer{
+        width: 400px;
+        padding-left: 15px;
+    }
+    #customer img{
+        width: 100%;
+    }
+    #customer-content{
+        width: 400px;
+    }
+    #section-4 h2{
+        font-size: 32px;
+    }
+    #customer-2{
+        width: 400px;
+        padding-right: 15px;
+    }
+    #customer-2 img{
+        width: 100%;
+    }
+    #customer-content-2{
+        width: 400px;
+        padding-left: 15px;
+    }
+    #section-5 h2{
+        font-size: 32px;
+    }
+    #feather{
+        width: 400px;
+    }
+    #Star{
+        width: 400px;
+    }
+    #sun{
+        width: 400px;
+    }
+    #section-6{
+        margin-top: 150px;
+    }
+    #section-6 h2{
+        font-size: 40px;
+        padding: 0 80px;
+    }
+    #three-cards{
+        padding: 0 15px;
+    }
+    #First-card{
+        width: 270px;
+        padding: 20px;
+    }
+    #second-card{
+        width: 270px;
+        padding: 20px;
+    }
+    #last-card{
+        width: 270px;
+        padding: 20px;
+    }
+    #hero-banner{
+        padding: 0 15px;
+    }
+    #hero-banner img{
+        width: 100%;
+    }
+    #section-7 h2{
+        font-size: 26px;
+    }
+    #fr-check p{
+        font-size: 16px;
+        margin-right: 34px;
+    }
+    #sc-check p{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    #Admins-card{
+        padding: 0 15px;
+    }
+    #admin-card{
+        width: 270px;
+    }
+    #admin-card > img{
+        width: 270px;
+    }
+    #admin-card-2{
+        width: 270px;
+    }
+    #admin-card-2 > img{
+        width: 270px;
+    }
+    #admin-card-3{
+        width: 270px;
+    }
+    #admin-card-3 > img{
+        width: 270px;
+    }
+    #section-9 h2{
+        padding: 0 85px;
+    }
+    #footer{
+        padding-left: 15px;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .container{
+        width: 700px;
+    }
+    #half-cercle svg{
+        left: 144px;
+    }
+    #First-section{
+        width: 300px;
+        padding-left: 15px;
+    }
+    #section-2 h1{
+        font-size: 28px;
+        line-height: 45px;
+        z-index: 1;
+    }
+    #dash-board svg{
+        width: 300px;
+    }
+    #dash-board{
+        padding-right: 15px;
+    }
+    #First-btn{
+        padding: 16px 13px;
+        font-size: 16px;
+    }
+    #second-btn{
+        padding: 12px 20px;
+    }
+    
+    #logo{
+        flex-wrap: wrap;
+        gap: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #section-3 h2{
+        font-size: 38px;
+        padding: 0 40px;
+    }
+    #cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 25px;
+    }
+    #card-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #card-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #card-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #customer{
+        width: 300px;
+    }
+    #customer img{
+        width: 100%;
+    }
+    #customer svg{
+        right: 0;
+        top: 150px;
+    }
+    #customer-content{
+        width: 300px;
+    }
+    #section-4 h2{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    #customer-2{
+        width: 300px;
+    }
+    #customer-2 img{
+        width: 100%;
+    }
+    #customer-2 svg{
+        width: 250px;
+        top: 160px;
+    }
+    #section-5 h2{
+        font-size: 28px;
+    }
+    #feather{
+        width: 300px;
+    }
+    #Star{
+        width: 300px;
+    }
+    #sun{
+        width: 300px;
+    }
+    #section-6 h2{
+        font-size: 32px;
+        padding: 0 20px;
+    }
+    #double-arrwo svg{
+        width: 120px;
+        display: none;
+    }
+    #three-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    #First-card{
+        width: 100%;
+    }
+    #second-card{
+        width: 100%;
+    }
+    #last-card{
+        width: 100%;
+    }
+    #drop-down{
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-7 h2{
+        font-size: 28px;
+        padding-left: 15px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #drop-down p{
+        font-size: 20px;
+    }
+    #section-8 h2{
+        font-size: 32px;
+        padding: 0 5px;
+    }
+    #Admins-card{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    #admin-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #admin-card > img{
+        width: 500px;
+    }
+    #admin-card-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #admin-card-2 > img{
+        width: 500px;
+    }
+    #admin-card-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #admin-card-3 > img{
+        width: 500px;
+    }
+    #section-9 h2{
+        font-size: 32px;
+        padding: 0 6px;
+    }
+    
+}
+@media screen and (max-width:576px){
+    .container{
+        width: 550px;
+    }
+    #half-cercle{
+        display: none;
+    }
+    .nav-bar .nav-bar-btn  label{
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding: 60px;
+    }
+    .nav-bar .nav-bar-btn{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 0.2rem;
+        z-index: 1;
+    }
+    .nav-bar .nav-bar-btn label span{
+        display:block;
+        width: 25px;
+        height: 5px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav-bar .nav-bar-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        background-color:rgba(0, 0, 0, .5);
+        height: 0;
+        transition: all 0.3s ease-in;
+        top: 40px;
+        left: 0;
+        overflow: hidden;
+    }
+    .nav-bar  .nav-bar-list  li {
+        width: 100%;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar #nav-bar-check:checked ~ .nav-bar-list {
+        height: 300px;
+        padding-top: 20px;
+    }
+    #Boldo{
+        flex-direction: column;
+        align-items: center;
+    }
+    #First-section{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #First-btn{
+        padding: 16px 56px;
+    }
+    #second-btn{
+        padding: 16px 56px;
+    }
+    #dash-board svg{
+        width: 100%;
+    }
+    #section-3 h2{
+        font-size: 28px;
+    }
+    #Customers{
+        flex-direction: column;
+        align-items: center;
+    }
+    #customer svg{
+        width: 200px;
+        height: 200px;
+    }
+    #customer-content{
+        margin-top: 50px;
+        width: 100%;
+        padding-left: 15px;
+    }
+    #Customers-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    #customer-content-2{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #section-5 h2{
+        margin-top: 0;
+    }
+    #feather{
+        width: 500px;
+    }
+    #Star{
+        width: 500px;
+    }
+    #sun{
+        width: 500px;
+    }
+    #customer-2 svg{
+        width: 200px;
+        top: 105px;
+    }
+    #section-6 h2{
+        text-align: center;
+    }
+    #section-7 h2{
+        font-size: 24px;
+    }
+    #drop-down p{
+        font-size: 18px;
+    }
+    #section-9 h2{
+        font-size: 28px;
+    }
+    #user-submit{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    #user-submit a{
+        font-size: 18px;
+        padding: 12px 40px;
+    }
+    #last-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    #link-bord{
+        width: 500px;
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width:350px){
+    .container{
+        width: 330px;
+    }
+    #two-btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo{
+        justify-content: center;
+    }
+    #section-3 h2{
+        font-size: 16px;
+        padding: 0 1px;
+        line-height: 40px;
+    }
+    #section-4 h2{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #section-5 h2{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #feather{
+        width: 300px;
+    }
+    #feather p{
+        font-size: 14px;
+    }
+    #Star{
+        width: 300px;
+    }
+    #Star p{
+        font-size: 14px;
+    }
+    #sun{
+        width: 300px;
+    }
+    #sun p{
+        font-size: 14px;
+    }
+    #section-6 h2{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #section-7 h2{
+        width: 300px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+    }
+    #drop-down p{
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    #section-8 h2{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #admin-card > img{
+        width: 300px;
+    }
+    #admin-card-2 > img{
+        width: 300px;
+    }
+    #admin-card-3 > img{
+        width: 300px;
+    }
+    #section-8 p{
+        font-size: 18px;
+    }
+    #section-9 h2{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #user-submit input{
+        padding: 12px 60px 12px 32px;
+    }
+    #footer{
+        align-items: center;
+    }
+    #link-bord{
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
