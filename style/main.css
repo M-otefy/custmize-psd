@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: "OpenSans-regular";
     src: url("../fonts/OpenSans-Regular.ttf");
@@ -928,6 +927,7 @@ nav li{
         gap: 1rem;
         width: 100%;
         background-color:red;
+        background-color:rgba(101, 228, 163, 1);
         height: 0;
         transition: all 0.3s ease-in;
         top: 40px;
@@ -1160,6 +1160,7 @@ nav li{
         gap: 1rem;
         width: 100%;
         background-color:red;
+        background-color:rgba(101, 228, 163, 1);
         height: 0;
         transition: all 0.3s ease-in;
         top: 40px;
@@ -1396,6 +1397,7 @@ nav li{
     }
     #heading{
         padding-left: 10px;
+        width: 350px;
     }
     #half-cercle{
         display: none;
@@ -1428,7 +1430,10 @@ nav li{
         align-items: center;
         gap: 1rem;
         width: 100%;
+
         background-color:red;
+        background-color:rgba(101, 228, 163, 1);
+
         height: 0;
         transition: all 0.3s ease-in;
         top: 40px;
@@ -1468,6 +1473,8 @@ nav li{
     #dash-board svg{
         width: 300px;
         /* padding: 0 15px; */
+        align-items: center;
+        justify-contact:center;
     }
     #logo{
         flex-direction: column;
@@ -1602,7 +1609,7 @@ nav li{
     }
     #user-submit a{
         font-size: 18px;
-        padding: 12px 40px;
+        padding: 12px 25px;
     }
     #last-section{
         flex-direction: column;
