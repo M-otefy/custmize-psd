@@ -10,21 +10,21 @@
     <div id="section-1">
         <div class="container">
             <div class="d-flex justify-content-between align-center">
-                <div class="d-flex align-center">
-                <svg width="26" height="34" viewBox="0 0 26 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="d-flex align-center" id="heading">
+                    <svg width="26" height="34" viewBox="0 0 26 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 16H17.0678C21.9511 16 25.9099 19.9588 25.9099 24.8421C25.9099 29.7255 21.9511 33.6842 17.0678 33.6842H0V16Z" fill="#65E4A3"/>
                     <path d="M0 0.526352H11.3927C15.0552 0.526352 18.0243 3.49541 18.0243 7.15793C18.0243 10.8204 15.0552 13.7895 11.3927 13.7895H0V0.526352Z" fill="#65E4A3"/>
-                </svg>
-                <h1>
-                    Boldo
-                </h1>
+                    </svg>
+                    <h1>
+                        Boldo
+                    </h1>
                 </div>
                 <nav class="nav-bar d-flex">
-                    <div id="half-cercle">
+                    <!-- <div id="half-cercle">
                         <svg width="623" height="504" viewBox="0 0 623 504" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="646.5" cy="-142.5" r="646.5" fill="#1C3D5B"/>
                         </svg>
-                    </div>
+                    </div> -->
                     <input type="checkbox" id="nav-bar-check">
                     <div class="nav-bar-btn">
                         <label for="nav-bar-check">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
 
-                <div id="dash-board">
+                <div id="dash-board" class="d-flex">
                 <svg width="494" height="423" viewBox="0 0 494 423" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_76_575)">
                     <g filter="url(#filter0_b_76_575)">
@@ -186,7 +186,7 @@
                     <p>
                         Learning curve network effects return on investment.
                     </p>
-                    <div class="d-flex align-center">
+                    <div class="d-flex align-center explore">
                         <a href="">Explore page</a>
                         <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 14H19" stroke="#0A2640" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -203,7 +203,7 @@
                     <p>
                         Learning curve network effects return on investment.
                     </p>
-                    <div class="d-flex align-center">
+                    <div class="d-flex align-center explore">
                         <a href="">Explore page</a>
                         <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 14H19" stroke="#0A2640" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -220,7 +220,7 @@
                         <p>
                             Learning curve network effects return on investment.
                         </p>
-                    <div class="d-flex align-center">
+                    <div class="d-flex align-center explore">
                         <a href="">Explore page</a>
                         <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 14H19" stroke="#0A2640" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -496,31 +496,16 @@
                 <img src="./images/Image (49).png" alt="">
             </div>
             <div class="d-flex justify-content-around" id="drop-down">
-                <div class="">
                     <h2>
                         We connect our customers with the best, and help them keep up-and stay open.
                     </h2>
-                </div>
-
-
-                <div class="d-flex flex-column align-start">
-                    <div class="d-flex align-center" id="fr-check">
-                        <p>
-                            We connect our customers with the best?
-                        </p>
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="14" cy="14" r="14" fill="#0A2640"/>
-                        <path d="M8 12L14 18L20 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="d-flex align-center" id="sc-check">
-                        <p>
-                            Android research & development rockstar? 
-                        </p>
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="14" cy="14" r="14" fill="#0A2640"/>
-                        <path d="M8 12L14 18L20 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb1" checked>
+                        <label for="cb1" class="tab__label">drop-down</label>
+                    <div class="tab__content">
+                        <p>We connect our customers with the best?</p>
+                        <p>We connect our customers with the best?</p>
+                        <p>We connect our customers with the best?</p>
                     </div>
                 </div>
             </div>
@@ -631,7 +616,7 @@
         <div class="container">
             <div class="d-flex justify-content-between" id="last-section">
                 <div class="d-flex flex-column align-start w-300" id="footer">
-                    <div class="d-flex align-center">
+                    <div class="d-flex align-center" id="footer-div">
                         <svg width="25" height="33" viewBox="0 0 25 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 15.5H16.2851C21.0522 15.5 24.9167 19.3645 24.9167 24.1316C24.9167 28.8987 21.0522 32.7632 16.2851 32.7632H0V15.5Z" fill="#0A2640"/>
                         <path d="M0 0.394531H10.8597C14.435 0.394531 17.3333 3.2929 17.3333 6.86822C17.3333 10.4435 14.435 13.3419 10.8597 13.3419H0V0.394531Z" fill="#0A2640"/>
@@ -648,7 +633,7 @@
                     </span>
                 </div>
                 <div class="d-flex justify-content-around" id="link-bord">
-                    <div class="d-flex flex-column align-start">
+                    <div class="d-flex flex-column" id="link-bord-1">
                         <h4>
                             Landings
                         </h4>
@@ -658,7 +643,7 @@
                             <li><a href="">Services</a></li>
                         </ul>
                     </div>
-                    <div class="d-flex flex-column align-start">
+                    <div class="d-flex flex-column" id="link-bord-2">
                         <h4>
                             Company
                         </h4>
@@ -673,7 +658,7 @@
                             <li><a href="">Services</a></li>
                         </ul>
                     </div>
-                    <div class="d-flex flex-column align-start">
+                    <div class="d-flex flex-column" id="link-bord-3">
                         <h4>
                             Resources
                         </h4>
@@ -687,5 +672,7 @@
             </div>
         </div>
     </div>
+
+
 </body>
 </html>

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: solid greenyellow; */
 }
 
 @font-face {
@@ -65,8 +64,10 @@
     list-style: none;
 }
 .nav-bar-list a{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "OpenSans-regular";
     color: #efefef;
-    font-size: 18px;
     text-decoration: none;
 }
 
@@ -101,6 +102,9 @@ nav li{
 
 }
 #last-link{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "OpenSans-regular";
     background-color: rgba(255, 255, 255, 1);
     padding: 8px 40px;
     border: 2px;
@@ -174,11 +178,24 @@ nav li{
     justify-content: space-between;
     margin-top: 56px;
     padding-bottom: 64px;
+    position: relative;
 }
-/* #logo{
-    background: linear-gradient(90deg, #0A2640 0%, rgba(10, 38, 64, 0.109375) 31.6%, rgba(10, 38, 64, 0) 72.89%, #0A2640 97.87%);
-
-} */
+#logo::before {
+    left: 0;
+}
+#logo::after {
+    right: 0;
+}
+#logo::before,
+#logo::after{
+    content: '';
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    top: -35%;
+    background: linear-gradient(90deg, #0a2640ad 0%, rgb(10 38 64 / 0%) 31.6%, rgba(10, 38, 64, 0) 72.89%, #0a2640ad 97.87%);
+}
 #section-3{
     margin-bottom: 185px;
 }
@@ -467,8 +484,89 @@ nav li{
     /* width: 1100px; */
     margin-bottom: 56px;
 }
+:root {
+    --primary: rgba(10, 38, 64, 1);
+    --secondary: #ff5252;
+    --background: #eee;
+    --highlight: #ffda79;
+    --theme: var(--primary);
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab p{
+    color: rgba(0, 0, 0, 1);
+  }
+  .tab__content {
+    max-height:0;
+    overflow: hidden;
+    transition: all 0.35s;
+    background-color: transparent;
+  }
+  .tab input:checked ~ .tab__content {
+    max-height: 10rem;
+  }
+  .accordion {
+    color: var(--theme);
+    border: 2px solid;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .tab__label,
+  .tab__close {
+    display: flex;
+    color: rgba(10, 38, 64, 1);
+    background:transparent;
+    cursor: pointer;
+  }
+  .tab__label {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .tab__label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+  }
+  .tab input:checked + .tab__label::after {
+    transform: rotate(270deg);
+  }
+  .tab__content p {
+    margin: 0;
+    padding: 1rem;
+  }
+  .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .accordion--radio {
+    --theme: var(--secondary);
+  }
+  
+  /* Arrow animation */
+  .tab input:not(:checked) + .tab__label:hover::after {
+    animation: bounce .5s infinite;
+  }
+  @keyframes bounce {
+    25% {
+      transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+      transform: rotate(90deg) translate(-.25rem);
+    }
+  }
 #section-7 h2{
     font-size: 36px;
+    width: 500px;
     font-weight: 400;
     font-family: "OpenSans-regular";
     line-height: 56px;
@@ -483,6 +581,7 @@ nav li{
 }   
 #fr-check{
     margin-bottom: 32px;
+
 }
 #sc-check p{
     font-size: 20px;
@@ -549,6 +648,7 @@ nav li{
     margin-bottom: 24px;
 }
 #load-more{
+    font-family: "openSans-reguler";
     justify-content: center;
     align-items: center;
     display: flex;
@@ -678,71 +778,126 @@ nav li{
 }
 @media screen and (max-width:1200px){
     .container{
-        width: 950px;
+        width: 900px;
     }
     #half-cercle svg{
         left: 575px;
     }
     #First-section{
-        width: 450px;
+        width: 400px;
     }
     #section-2 h1{
         font-size: 42px;
     }
+    #two-btn{
+        flex-direction: column;
+        align-items: center;
+    }
     #dash-board svg{
-        width: 450px;
+        width: 400px;
+    }
+    #cards img{
+        width: 250px;
+    }
+    #card-1{
+        width: 250px;
+    }
+    #card-2{
+        width: 250px;
+    }
+    #card-3{
+        width: 250px;
     }
     #customer{
-        width: 450px;
+        width: 400px;
     }
     #customer img{
         width: 100%;
     }
     #customer-content{
-        width: 450px;
+        width: 400px;
+    }
+    #customer- h2{
+        padding-right: 10px;
     }
     #customer-2{
-        width: 450px;
+        width: 400px;
     }
     #customer-2 img{
         width: 100%;
     }
+    #customer-2 svg{
+        width: 300px;
+    }
     #customer-content-2{
-        width: 450px;
+        width: 400px;
     }
     #feather{
-        width: 450px;
+        width: 400px;
     }
     #Star{
-        width: 450px;
+        width: 400px;
     }
     #sun{
-        width: 450px;
+        width: 400px;
     }
     #section-6 h2{
         font-size: 40px;
         padding: 0 80px;
     }
+    #double-arrwo svg{
+        width: 200px;
+    }
     #First-card{
-        width: 300px;
+        width: 250px;
+        padding: 20px;
+    }
+    #First-card p{
+        font-size: 22px;
     }
     #second-card{
-        width: 300px;
+        width: 250px;
+        padding: 20px;
+    }
+    #second-card p{
+        font-size: 22px;
     }
     #last-card{
-        width: 300px;
+        width: 250px;
+        padding: 20px;
+    }
+    #last-card p{
+        font-size: 22px;
     }
     #hero-banner img{
         width: 100%;
     }
     #section-7 h2{
         font-size: 32px;
+        width: 400px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    #admin-card > img{
+        width: 250px;
+    }
+    #admin-card-2 > img{
+        width: 250px;
+    }
+    #admin-card-3 > img{
+        width: 250px;
+    }
+    #Admins-card p{
+        font-size: 16px;
+    }
+    #link-bord{
+        width: 500px;
     }
 
 }
 @media screen and (max-width:991px) {
     .container{
-        width: 850px;
+        width: 700px;
     }
     .nav-bar .nav-bar-btn  label{
         display: block;
@@ -772,7 +927,7 @@ nav li{
         align-items: center;
         gap: 1rem;
         width: 100%;
-        background-color:rgba(0, 0, 0, .5);
+        background-color:red;
         height: 0;
         transition: all 0.3s ease-in;
         top: 40px;
@@ -820,83 +975,91 @@ nav li{
     }
     #cards{
         padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
     }
-    #card-1{
-        width: 270px;
+    #cards h5{
+        text-align: center;
     }
-    #card-1 img{
-        width: 270px;
+    #cards p{
+        text-align: center;
     }
-    #card-2{
-        width: 270px;
-    }
-    #card-2 img{
-        width: 270px;
-    }
-    #card-3{
-        width: 270px;
-    }
-    #card-3 img{
-        width: 270px;
+    .explore{
+        justify-content: center;
+        margin-bottom: 25px;
     }
     #customer{
-        width: 400px;
+        width: 300px;
         padding-left: 15px;
     }
     #customer img{
         width: 100%;
     }
-    #customer-content{
-        width: 400px;
+    #customer svg {
+        top: 180px;
+        left: 0;
     }
-    #section-4 h2{
-        font-size: 32px;
+    #customer-content{
+        width: 300px;
+    }
+    #customer-content h2{
+        font-size: 26px;
+        line-height: 52px;
     }
     #customer-2{
-        width: 400px;
+        width: 300px;
         padding-right: 15px;
     }
     #customer-2 img{
         width: 100%;
     }
+    #customer-2 svg{
+        top: 180px;
+        left: 0;
+    }
     #customer-content-2{
-        width: 400px;
+        width: 300px;
         padding-left: 15px;
     }
-    #section-5 h2{
-        font-size: 32px;
+    #customer-content-2 h2{
+        font-size: 26px;
+        line-height: 52px;
     }
     #feather{
-        width: 400px;
+        width: 300px;
     }
     #Star{
-        width: 400px;
+        width: 300px;
     }
     #sun{
-        width: 400px;
+        width: 300px;
     }
     #section-6{
         margin-top: 150px;
     }
     #section-6 h2{
-        font-size: 40px;
-        padding: 0 80px;
+        font-size: 32px;
+        padding: 0 30px;
     }
     #three-cards{
         padding: 0 15px;
     }
+    #three-cards P{
+        font-size: 16px;
+    }
     #First-card{
-        width: 270px;
-        padding: 20px;
+        width: 220px;
+        padding: 22px;
     }
     #second-card{
-        width: 270px;
+        width: 220px;
         padding: 20px;
     }
     #last-card{
-        width: 270px;
+        width: 220px;
         padding: 20px;
     }
+
     #hero-banner{
         padding: 0 15px;
     }
@@ -918,38 +1081,55 @@ nav li{
         font-size: 16px;
         margin-right: 20px;
     }
+    #section-8 h2{
+        font-size: 32px;
+        line-height: 65px;
+    }
     #Admins-card{
         padding: 0 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Admins-card p{
+        text-align: center;
     }
     #admin-card{
-        width: 270px;
-    }
-    #admin-card > img{
-        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
     }
     #admin-card-2{
-        width: 270px;
-    }
-    #admin-card-2 > img{
-        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
     }
     #admin-card-3{
-        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
     }
-    #admin-card-3 > img{
-        width: 270px;
-    }
+
     #section-9 h2{
+        font-size: 38px;
         padding: 0 85px;
     }
     #footer{
         padding-left: 15px;
     }
+    #link-bord a{
+        font-size: 16px;
+    }
     
 }
 @media screen and (max-width:768px){
     .container{
-        width: 600px;
+        width: 500px;
     }
     .nav-bar .nav-bar-btn  label{
         display: block;
@@ -963,7 +1143,7 @@ nav li{
         right: 0;
         top: 0;
         padding-top: 0.2rem;
-        z-index: 1;
+        z-index: 1111;
     }
     .nav-bar .nav-bar-btn label span{
         display:block;
@@ -979,12 +1159,13 @@ nav li{
         align-items: center;
         gap: 1rem;
         width: 100%;
-        background-color:rgba(0, 0, 0, .5);
+        background-color:red;
         height: 0;
         transition: all 0.3s ease-in;
         top: 40px;
         left: 0;
         overflow: hidden;
+        z-index: 11;
     }
     .nav-bar  .nav-bar-list  li {
         width: 100%;
@@ -1004,26 +1185,32 @@ nav li{
         z-index: 1;
     }
     #First-section{
-        width: 250px;
+        width: 230px;
         padding-left: 15px;
     }
     #section-2 h1{
-        font-size: 28px;
-        line-height: 45px;
+        font-size: 22px;
+        line-height: 42px;
         z-index: 1;
     }
     #dash-board svg{
-        width: 250px;
-    }
-    #dash-board{
+        width: 230px;
         padding-right: 15px;
     }
+    #dash-board{
+        padding: 0;
+    }
+    #two-btn{
+        flex-direction: column;
+        align-items: center;
+    }
     #First-btn{
-        padding: 16px 13px;
-        font-size: 16px;
+        padding: 12px 12px;
+        font-size: 12px;
     }
     #second-btn{
-        padding: 12px 20px;
+        padding: 8px 12px;
+        font-size: 12px;
     }
     
     #logo{
@@ -1031,9 +1218,10 @@ nav li{
         gap: 35px;
         padding-left: 15px;
         padding-right: 15px;
+        width: 500px;
     }
     #section-3 h2{
-        font-size: 38px;
+        font-size: 32px;
         padding: 0 40px;
     }
     #cards{
@@ -1065,7 +1253,7 @@ nav li{
         text-align: center;
     }
     #customer{
-        width: 250px;
+        width: 200px;
     }
     #customer img{
         width: 100%;
@@ -1073,29 +1261,32 @@ nav li{
     #customer svg{
         width: 200px;
         right: 0;
-        top: 70px;
+        top: 35px;
     }
     #customer-content{
-        width: 250px;
+        width: 200px;
     }
-    #section-4 h2{
-        font-size: 28px;
-        line-height: 45px;
+    #customer-content h2{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    #three-check p{
+        font-size: 14px;
+    }
+    #section-4 a{
+        font-size: 16px;
+    }
+    #customer-content-2{
+        width: 200px;
     }
     #customer-2{
-        width: 250px;
-    }
-    #customer-2 img{
-        /* width: 100%; */
+        width: 200px;
     }
     #customer-2 svg{
-        width: 250px;
+        width: 200px;
         top: 70px;
         left: 0;
         width: 200px;
-    }
-    #customer-content-2{
-        /* width: 250px; */
     }
     #section-5 h2{
         font-size: 22px;
@@ -1103,16 +1294,23 @@ nav li{
         line-height: 40px;
     }
     #feather{
-        width: 300px;
+        width: 200px;
+        padding: 5px;
+        font-size: 12px;
     }
     #Star{
-        width: 300px;
+        width: 200px;
+        padding: 5px;
+        font-size: 12px;
     }
     #sun{
-        width: 300px;
+        width: 200px;
+        padding: 5px;
+        font-size: 12px;
     }
     #section-6 h2{
         font-size: 32px;
+        text-align: center;
     }
     #double-arrwo svg{
         width: 120px;
@@ -1152,9 +1350,6 @@ nav li{
         align-items: center;
         text-align: center;
     }
-    #admin-card > img{
-        width: 500px;
-    }
     #admin-card-2{
         width: 100%;
         display: flex;
@@ -1162,9 +1357,7 @@ nav li{
         align-items: center;
         text-align: center;
     }
-    #admin-card-2 > img{
-        width: 500px;
-    }
+
     #admin-card-3{
         width: 100%;
         display: flex;
@@ -1172,19 +1365,37 @@ nav li{
         align-items: center;
         text-align: center;
     }
-    #admin-card-3 > img{
-        width: 500px;
-    }
+
     #section-9 h2{
-        font-size: 32px;
+        font-size: 28px;
         padding: 0 6px;
+    }
+    #user-submit input{
+        padding: 12px 20px;
+    }
+    #user-submit a{
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    #last-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    #footer{
+        align-items: center;
+    }
+    #footer p{
+        text-align: center;
     }
     
 }
 @media screen and (max-width:576px){
     .container{
-        width: 350px;
-        outline: solid red;
+        width: 300px;
+    }
+    #heading{
+        padding-left: 10px;
     }
     #half-cercle{
         display: none;
@@ -1201,7 +1412,7 @@ nav li{
         right: 0;
         top: 0;
         padding-top: 0.2rem;
-        z-index: 1;
+        z-index: 1111;
     }
     .nav-bar .nav-bar-btn label span{
         display:block;
@@ -1217,12 +1428,13 @@ nav li{
         align-items: center;
         gap: 1rem;
         width: 100%;
-        background-color:rgba(0, 0, 0, .5);
+        background-color:red;
         height: 0;
         transition: all 0.3s ease-in;
         top: 40px;
         left: 0;
         overflow: hidden;
+        z-index: 11;
     }
     .nav-bar  .nav-bar-list  li {
         width: 100%;
@@ -1236,7 +1448,6 @@ nav li{
         padding-top: 20px;
     }
     #Boldo{
-        width: 300px;
         flex-direction: column;
         align-items: center;
     }
@@ -1256,11 +1467,12 @@ nav li{
     }
     #dash-board svg{
         width: 300px;
+        /* padding: 0 15px; */
     }
     #logo{
-        width: 300px;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     #section-3 h2{
         font-size: 22px;
@@ -1275,41 +1487,58 @@ nav li{
     #card-3{
         width: 300px;
     }
+    #cards img{
+        width: 200px;
+    }
     #Customers{
         flex-direction: column;
         align-items: center;
     }
+    #customer{
+        margin-bottom: 50px;
+    }
     #customer svg{
         width: 200px;
         height: 200px;
+        top: 80px;
     }
     #customer-content{
         margin-top: 50px;
         padding-left: 15px;
     }
+    #section-4 h2 {
+        font-size: 26px;
+        line-height: 40px;
+        text-align: center;
+    }
     #Customers-2{
         flex-direction: column;
         align-items: center;
     }
+
     #customer-content-2{
         margin-bottom: 25px;
         width: 300px;
     }
-    #section-5 h2{
-        margin-top: 0;
-    }
-    #feather{
-        width: 300px;
-    }
-    #Star{
-        width: 300px;
-    }
-    #sun{
-        width: 300px;
-    }
     #customer-2 svg{
         width: 200px;
-        top: 105px;
+        top: 55px;
+    }
+    #section-5 h2{
+        margin-top: 0;
+        text-align: center;
+    }
+    #section-4 a{
+        font-size: 14px;
+    }
+    #feather{
+        width: 100%;
+    }
+    #Star{
+        width: 100%;
+    }
+    #sun{
+        width: 100%;
     }
     #admin-card{
         width: 300px;
@@ -1319,7 +1548,7 @@ nav li{
         text-align: center;
     }
     #admin-card > img{
-        width: 300px;
+        width: 200px;
     }
     #admin-card-2{
         width: 300px;
@@ -1329,7 +1558,7 @@ nav li{
         text-align: center;
     }
     #admin-card-2 > img{
-        width: 300px;
+        width: 200px;
     }
     #admin-card-3{
         width: 300px;
@@ -1339,26 +1568,37 @@ nav li{
         text-align: center;
     }
     #admin-card-3 > img{
-        width: 300px;
+        width: 200px;
     }
     
     #section-6 h2{
-        text-align: center;
-        padding: 0;
+        font-size: 24px;
+        line-height: 40px;
     }
     #section-7 h2{
-        font-size: 24px;
+        font-size: 22px;
+        line-height: 40px;
+        text-align: center;
     }
     #drop-down p{
         font-size: 18px;
     }
+    #section-8 h2{
+        font-size: 24px;
+        line-height: 40px;
+    }
     #section-9 h2{
-        font-size: 28px;
+        font-size: 24px;
+        line-height: 40px;
     }
     #user-submit{
         flex-direction: column;
         align-items: center;
         gap: 25px;
+    }
+    #user-submit input{
+        padding: 12px 90px 12px 32px;
+        margin: 0;
     }
     #user-submit a{
         font-size: 18px;
@@ -1368,12 +1608,34 @@ nav li{
         flex-direction: column;
         align-items: center;
     }
+    #footer-div{
+        justify-content: center;
+    }
+    #section-10 p{
+        text-align: center;
+    }
+    #section-10 span{
+        align-self: center;
+    }
     #link-bord{
-        width: 300px;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 25PX;
         margin-top: 25px;
+    }
+    #link-bord-1 ul{
+        align-items: center;
+    }
+    #link-bord-2{
+        align-items: center;
+    }
+    #link-bord-2 ul{
+        align-items: center;
+        justify-content: center;
+    }
+    #link-bord-3 ul{
+        align-items: center;
     }
 }
 @media screen and (max-width:320px){
@@ -1392,11 +1654,7 @@ nav li{
         align-items: center;
     }
     #dash-board svg{
-        width: 300px;
-    }
-    #logo{
-        justify-content: center;
-        width: 300px;
+        padding-left: 15px;
     }
     #section-3 h2{
         font-size: 16px;
@@ -1412,22 +1670,25 @@ nav li{
         line-height: 40px;
     }
     #customer-content-2{
-        width: 190px;
+        align-items: center;
     }
     #feather{
         width: 190px;
+        padding: 10px 1px 16px 5px;
     }
     #feather p{
         font-size: 14px;
     }
     #Star{
         width: 190px;
+        padding: 10px 1px 16px 5px;
     }
     #Star p{
         font-size: 14px;
     }
     #sun{
         width: 190px;
+        padding: 10px 1px 16px 5px;
     }
     #sun p{
         font-size: 14px;
@@ -1442,6 +1703,9 @@ nav li{
         text-align: center;
         line-height: 40px;
     }
+    #double-drop{
+        padding-right: 10px;
+    }
     #drop-down p{
         font-size: 14px;
         padding-left: 15px;
@@ -1451,13 +1715,13 @@ nav li{
         line-height: 40px;
     }
     #admin-card > img{
-        width: 300px;
+        width: 200px;
     }
     #admin-card-2 > img{
-        width: 300px;
+        width: 200px;
     }
     #admin-card-3 > img{
-        width: 300px;
+        width: 200px;
     }
     #section-8 p{
         font-size: 18px;
@@ -1479,3 +1743,7 @@ nav li{
         gap: 25px;
     }
 }
+
+
+
+
